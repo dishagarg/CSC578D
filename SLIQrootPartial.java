@@ -1,7 +1,6 @@
 /*
  * This is partial code for building the root of a decision tree using the SLIQ algorithm. 
- * Only the numeric attributes are to be considered in this exercise.
- * Search for "Write your code" to see where you need to add code.  
+ * Only the numeric attributes are considered in this program.
  */
 
 import java.io.*;
@@ -135,7 +134,7 @@ public class SLIQrootPartial {
 		//String sortpath = "sort";
 		System.out.println("Sorting attribute files... ");
 		
-		String sortpath = "\"C:/Users/Dhanush/Downloads/UnxUpdates/sort.exe\"";
+		String sortpath = "\"C:/Users/Disha/Downloads/UnxUpdates/sort.exe\"";
 		for(int i=0; i<attributes.length; i++)
 			if(i != yIndex && isNumeric[i]) {
 				String sortcmd = sortpath + " -nk 2 " + attributes[i] + ".txt -o " + attributes[i] + ".txt";
@@ -167,7 +166,7 @@ public class SLIQrootPartial {
 		Double prev = Double.MIN_VALUE;
 
 		/* Complete this while loop */
-		/* Hint: Make use of those auxiliary methods, defined below */
+		/* Making use of those auxiliary methods, defined below */
 		while( (line=Afile.readLine()) != null ) {  
 
 			String[] strArray = line.split(sep);
@@ -176,7 +175,6 @@ public class SLIQrootPartial {
 			
 			//If v is a new value
 			if(prev < v) {
-				/* Write your code: replace null's with parameters when calling entropySplit() below*/
 				//Compute the entropy of the split, by the entropySplit() function defined with two parameters
 				double entropy_split = entropySplit(att_histpair_map.get(A).histogram0, att_histpair_map.get(A).histogram1);
 				
@@ -267,8 +265,8 @@ public class SLIQrootPartial {
 		return entropy;
 	}
 	
-	//Compute the weighted average entropy of the split (See Slide 17 in decision_trees.pptx)
-	//Hint: This function will be using the above entropyHistogram()
+	//Compute the weighted average entropy of the split
+	//This function is using the above entropyHistogram()
 	Double entropySplit(List< Map<String, Integer> > histograms) {
 		Double expectedInfo = 0.0;
 		for(Map<String, Integer> hist: histograms){
