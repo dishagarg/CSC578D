@@ -165,7 +165,6 @@ public class SLIQrootPartial {
 		
 		Double prev = Double.MIN_VALUE;
 
-		/* Complete this while loop */
 		/* Making use of those auxiliary methods, defined below */
 		while( (line=Afile.readLine()) != null ) {  
 
