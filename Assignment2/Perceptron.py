@@ -30,7 +30,7 @@ xt = np.transpose(x)
 flag = True
 
 # Update the weights and compute till ywx is not < 0
-while(flag):
+while flag:
     flag = False
     ywx = np.multiply(y, np.dot(w, xt))
     yx = np.zeros(np.shape(x))
