@@ -66,3 +66,5 @@ plt.ylabel('Error Vector')
 plt.show()
 
 # Step 5: Find a good learning rate based on the error curve.
+# kappa = 1 is a good learning rate based on this error curve.
+# As, it is neither too big nor too small.
