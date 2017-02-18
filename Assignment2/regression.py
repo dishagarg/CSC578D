@@ -47,6 +47,7 @@ xt = np.transpose(x)
 error_vector = []
 w_old = np.array([])
 
+# Loop until the weights(w) don’t change too much
 while True:
     if np.array_equal(np.around(w, decimals=3), np.around(w_old, decimals=3)):
         break
