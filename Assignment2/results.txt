@@ -1,0 +1,10 @@
+*****************Accuracy #1******************
+Training files used: trainlabels.txt and traindata.txt
+Testing files used: trainlabels.txt and traindata.txt
+Accuracy reported: 96.5838509317  (>90%)
+
+
+*****************Accuracy #2******************
+Training files used: trainlabels.txt and traindata.txt
+Testing files used: testlabels.txt and testdata.txt
+Accuracy reported: 80.198019802
